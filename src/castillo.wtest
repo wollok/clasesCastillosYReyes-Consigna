@@ -1,0 +1,12 @@
+import castillos.*
+describe "castillos" {
+	
+const unCastillo = new Castillo()
+const unRey = new Rey(castillo = unCastillo)
+
+test "el rey tiene un castillo" {
+
+	assert.equals(unCastillo,unRey.castillo())
+
+}
+}
